@@ -1,6 +1,9 @@
+# netlify.toml
 [build]
 command = "npm install && npm run build"
 publish = "dist"
 
 [build.environment]
 NODE_VERSION = "20"
+SECRETS_SCAN_SMART_DETECTION_ENABLED = "true"
+SECRETS_SCAN_SMART_DETECTION_OMIT_VALUES = "true"
