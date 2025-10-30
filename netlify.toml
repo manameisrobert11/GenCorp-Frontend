@@ -1,0 +1,7 @@
+[build]
+base = "frontend"        # <- folder that has index.html
+command = "npm ci && npm run build"
+publish = "dist"
+
+[build.environment]
+NODE_VERSION = "20"
